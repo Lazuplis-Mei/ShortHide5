@@ -378,6 +378,11 @@ namespace ShortHide5
             {
                 if(Factors[i] == 0)
                 {
+                    if(i == 0)
+                    {
+                        stringBuilder.Append('Z');
+                        stringBuilder.Append(To36Hex(Numbers[i]));
+                    }
                     continue;
                 }
                 stringBuilder.Append((char)(Factors[i] + 'A' - 1));
